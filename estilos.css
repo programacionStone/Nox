@@ -1,0 +1,365 @@
+/* RESET GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* BODY */
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HERO PRINCIPAL */
+.hero {
+    height: 80vh;
+    background:
+        linear-gradient(
+            rgba(139, 0, 21, 0.65),
+            rgba(139, 0, 21, 0.65)
+        ),
+        url("imagenes/dron.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    color: white;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+    display: block;
+    margin-top: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    opacity: 0.95;
+}
+
+/* MENÚ */
+.menu-box {
+    background-color: white;
+    width: 85%;
+    margin: -35px auto 50px auto;
+    padding: 15px 30px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 10;
+}
+
+.menu-box a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 0.95em;
+    position: relative;
+}
+
+.menu-box a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #8b0015;
+    bottom: -6px;
+    left: 0;
+    transition: 0.3s;
+}
+
+.menu-box a:hover::after {
+    width: 100%;
+}
+
+/* SECCIONES */
+.section {
+    background-color: white;
+    width: 80%;
+    margin: 60px auto;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    color: #8b0015;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.section p {
+    font-size: 1.05em;
+    text-align: justify;
+}
+
+/* EVENTOS (BOTONES) */
+.eventos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.evento {
+    background-color: #e6edf6;
+    padding: 18px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.evento:hover {
+    background-color: #d5e2f2;
+    transform: translateY(-3px);
+}
+
+/* GALERÍAS DE EVENTOS */
+.galeria-evento {
+    display: none;
+    margin: 25px auto 45px auto;
+    max-width: 900px;
+}
+
+/* TEXTO DEL EVENTO */
+.evento-info {
+    max-width: 650px;
+    margin: 0 auto 25px auto;
+    text-align: center;
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* IMÁGENES DEL EVENTO */
+.evento-imagenes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.evento-imagenes img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.evento-imagenes img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    background-color: #8b0015;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 60px;
+}
+
+footer p {
+    font-size: 0.95em;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .hero-content h1 {
+        font-size: 2.2em;
+    }
+
+    .menu-box {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .section {
+        width: 95%;
+        padding: 30px;
+    }
+}
+/* PROYECTO – AJUSTE DE IMAGEN */
+.proyecto-imagen img {
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* LOGO DEL COLEGIO EN EL HERO */
+.logo-colegio {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 90px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 8px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    z-index: 20;
+}
+
+/* Contenedor general */
+.contacto-mejorado {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* Tarjeta izquierda */
+.contacto-card {
+    background: #8b0015;
+    color: white;
+    padding: 35px;
+    border-radius: 18px;
+}
+
+.contacto-card h2 {
+    margin-bottom: 25px;
+    font-size: 1.6em;
+}
+
+/* Datos */
+.dato {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 18px;
+    font-size: 1.05em;
+    align-items: flex-start;
+}
+
+/* Formulario */
+.contacto-formulario h2 {
+    color: #8b0015;
+    margin-bottom: 20px;
+}
+
+.contacto-formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contacto-formulario input,
+.contacto-formulario textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    width: 100%;
+}
+
+.contacto-formulario textarea {
+    min-height: 130px;
+    resize: none;
+}
+
+.contacto-formulario button {
+    width: fit-content;
+    background: #8b0015;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.contacto-formulario button:hover {
+    background: #a4001a;
+}
+
+/* Mapa */
+.mapa-box iframe {
+    width: 100%;
+    height: 350px;
+    border-radius: 18px;
+    border: none;
+    margin-top: 40px;
+}
+
+/* Responsive SOLO contacto */
+@media (max-width: 768px) {
+    .contacto-mejorado {
+        grid-template-columns: 1fr;
+    }
+}
+/* === FIX DEFINITIVO INSTITUCIÓN === */
+.institucion-imagen {
+    margin-top: 25px;
+}
+
+.institucion-imagen img {
+    width: 100%;
+    max-height: 320px;   /* ← CLAVE */
+    object-fit: cover;   /* ← evita deformación */
+    border-radius: 16px;
+    display: block;
+}
+/* === FIX TEXTO CONTACTO  === */
+.contacto-card,
+.contacto-card h2,
+.contacto-card p,
+.contacto-card span,
+.contacto-card a {
+    color: #ffffff;
+}
+.contacto-card .dato {
+    line-height: 1.8;
+}
+/* =========================
+   FIX DEFINITIVO GALERÍA
+   NO AFECTA OTRAS PÁGINAS
+========================= */
+
+.pagina-galeria img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* contenedor de galería */
+.pagina-galeria .galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+}
+
+/* imágenes dentro de la galería */
+.pagina-galeria .galeria-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.pagina-galeria .galeria-grid img:hover {
+    transform: scale(1.05);
+}
