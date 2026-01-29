@@ -363,3 +363,31 @@ footer p {
 .pagina-galeria .galeria-grid img:hover {
     transform: scale(1.05);
 }
+/* AJUSTE PARA CELULARES */
+@media (max-width: 768px) {
+
+    /* HERO más bajo en celulares */
+    .hero {
+        height: 60vh;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    /* Texto del hero más compacto */
+    .hero-content h1 {
+        font-size: 2em;
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+        padding: 0 10px;
+    }
+
+    /* Menú más cerca del hero */
+    .menu-box {
+        margin: -20px auto 30px auto;
+        width: 95%;
+    }
+}
+
