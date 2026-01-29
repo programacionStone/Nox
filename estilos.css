@@ -390,4 +390,17 @@ footer p {
         width: 95%;
     }
 }
+/* ===== FIX FINAL HERO MOBILE ===== */
+@media (max-width: 768px) {
 
+    .hero {
+        min-height: 70vh;
+        height: auto;
+    }
+
+    .logo-colegio {
+        width: 65px;
+        top: 15px;
+        left: 15px;
+    }
+}
