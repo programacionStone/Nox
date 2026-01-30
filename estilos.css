@@ -404,3 +404,24 @@ footer p {
         left: 15px;
     }
 }
+/* ===== OPCIÓN PC-LIKE EN CELULAR ===== */
+@media (max-width: 768px) {
+
+    /* Contenedores más anchos */
+    .section {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    /* Menú más parecido a PC */
+    .menu-box {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .menu-box a {
+        font-size: 0.9em;
+    }
+}
