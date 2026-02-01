@@ -462,25 +462,27 @@ footer p {
     }
 }
 /* =========================
-   VIDEO INSTITUCIONAL INICIO
+   VIDEO INSTITUCIONAL – INICIO
+   (TAMAÑO CONTROLADO)
 ========================= */
 
 .video-inicio {
-    width: 80%;
-    margin: 50px auto;
-    background: white;
-    padding: 30px;
+    width: 65%;
+    margin: 25px auto 0 auto;
+    background: #ffffff;
+    padding: 20px;
     border-radius: 16px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-}
-
-.video-inicio h2 {
-    color: #8b0015;
-    margin-bottom: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
     text-align: center;
 }
 
-/* Video responsive */
+.video-inicio h3 {
+    color: #8b0015;
+    margin-bottom: 12px;
+    font-size: 1.2em;
+}
+
+/* Contenedor del video */
 .video-responsive {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
@@ -498,11 +500,12 @@ footer p {
     border: none;
 }
 
-/* Ajuste en celular */
+/* Ajuste para celular */
 @media (max-width: 768px) {
     .video-inicio {
         width: 95%;
-        padding: 20px;
+        padding: 18px;
     }
 }
+
 
